@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    body{
+        background: #024737;
+        text-align:center;
+        }
+    .titulo{
+       background:  rgb(2, 61, 61);
+     padding: 30px;
+     margin: auto;
+     font-family: ´calibri´;
+     color: white;
+     box-shadow: 7px 13px 37px #000;;
+    }
+    .form-registro{
+     margin-top: 100px;
+     background: #24303c;
+     width: 250px;
+     padding: 30px;
+     margin: auto;
+     font-family: ´calibri´;
+     color: white;
+     box-shadow: 7px 13px 37px #000;;
+     
+     }
+     .con{
+        width: 150px;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: ´calibri´;
+        font-size: 18px;
+        color: white;
+        text-align:center;
+     }
+    .opsi{
+        width: 240px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        font-family: ´calibri´;
+        background: black;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        
+    }
+    .guardar{
+        width: 200px;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        font-family: ´calibri´;
+        background: rgb(2, 61, 61);
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        box-shadow: 7px 13px 37px #000;;
+    }
+   </style>
+</head>
+<body>
+    <h1 class="titulo">DREAM MOTORCYCLE</h1>
+    <h1></h1>
+    <div class="form-registro">
+        <form method="post" action="/primerFormulario/connector.php">
+            <label for="Nombr">Nombre</label>
+            <input class="con" type="text" id="Nombr" name="Nombre" placeholder="Nombre">
+
+            <label for="Apellid">Apellido</label>
+            <input class="con" type="text" id="Apellid" name="Apellido" placeholder="Apellido">
+
+            <label for="Direc">Direccion</label>
+            <input class="con" type="text" id="direc" name="Direccion" placeholder="Direccion">
+
+            <label for="Corre">Correo</label>
+            <input class="con" type="text" id="Corre" name="Correo" placeholder="correo">
+
+            <label for="Gener">Genero</label>
+            <input class="con" type="text" id="Gener" name="Genero" placeholder="Genero">
+
+
+            <input type="submit" value="GUARDAR" class="guardar">
+            
+            
+    
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
